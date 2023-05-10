@@ -1,32 +1,47 @@
-1. mkdir homework1
-2. cd homework1
-3. git init
-4. vi homeworck.txt
-5. git remote add origin https://github.com/Tairoks/homework1.git
-6. git add
-7. git commit -m "first commit"
-8. git push -u origin master
-9. git branch develop
-10. git checkout develop
-11. git checkout -b develop1
-12. vi homework.txt
-13. git add .
-14. git commit -m "new entry"
-15. git push origin develop1
-16. cd ..
-17. mkdir aaa
-18. cd aaa
-19. git clone https://github.com/Tairoks/homework1.git
-20. cd homework1
-21. git branch -a 
-22. git checkout -b develop2
-23. vi homework.txt
-24. git add .
-25. git commit -m "new commit"
-26. git push origin develop2
-27. git checkout develop
-28. git merge develop2
-29. git merge develop1
-30. vi homework.txt
-31. git add .
-32. git push
+1. Создать локальную директорию и инициировать ее для git
+   mkdir homework1 (создаю директорию)
+   cd homework1 (захожу в директорию)
+   git init (инициализирую ее)
+2. Создать текстовый файл в директории и выполнить коммит
+   vi homeworck.txt (создаю текстовый файл)
+   git add (добовляю изминения в отслеживание)
+   git commit -m "first commit" (делаю первый комит)
+3. Создать удаленный репозиторий на GitHub   
+   git remote add origin https://github.com/Tairoks/homework1.git (создаю репозиторий на удаленном   сервере)
+4. Отправить (Push) локальный репозиторий в GitHub
+   git push -u origin master (отпрлавляю изминения в удаленный сервер)
+5. Создать новую ветку (назвать develop) и переключиться на нее
+   git branch develop (создаю новую ветку)
+   git checkout develop (перехожу в нее)
+6. Создать новую ветку от 'develop' и переключиться на нее
+   git checkout -b develop1 (создал ветку от 'develop' с переходом в нее)
+7. Добавить первую строку в текстовый файл, выполнить коммит и отправить в репозиторий
+   vi homework.txt (захожу в редатор и добовляю строку)
+   git add . (добовляю в отслеживание все файлы на этой ветке)
+   git commit -m "new entry" (делаю комит)
+   git push origin develop1 (загружаю эту ветку в удаленный репозиторий)
+8. Клонировать ваш репозиторий с GitHub в отдельную директорию
+   cd .. (выхожу их директории)
+   mkdir aaa (создаю папку для директории)
+   cd aaa (захожу в папку)
+   git clone https://github.com/Tairoks/homework1.git (клонирую репозиторий из удаленного сервера)
+   cd homework1 (захожу в репозиторий)
+9. Создать другую ветку от ветки 'develop' и переключиться на нее, используя клонированный проект
+   git branch -a (проверяю все ветки в репозитории)
+   git checkout -b develop2 (создаю ветку от 'develop' и захожу в нее)
+10. Добавить первую строку в текстовый файл (отличный от первой ветки), выполнить коммит и отправить в удаленный реозиторий
+    vi homework.txt (добовляю в первую строку изминения)
+    git add . (добовляю в отслеживание все файлы на этой ветке)
+    git commit -m "new commit" (делаю коммит)
+    git push origin develop2 (отправляю в удаленный репозиторий)
+11. Переключиться на 'develop'
+    git checkout develop (перехожу на ветку 'develop')
+12. Объединить (merge) первую ветку и отправить (push) изменения   
+    git merge develop2 (объеденяю ветки 'develop'и'develop2')
+13. Объединить (merge) вторую ветку и отправить (push) изменения
+    git merge develop1 (обьеденяю ветки 'develop'и'develop1')
+14. Разрешить конфликты, если необходимо
+    vi homework.txt (решаю конйфликт)
+    git add . (добовляю файлы в отслеживание)
+    git push (загружаю в удаленный репозиторий)
+15. Загружаю фаил Task1.md с использованными командами в домашнем задании в репозиторий https://github.com/Tairoks/python_course_it_step и делаю пул реквест.
