@@ -1,10 +1,9 @@
 """Дано 3-х значное число. Найти сумму цифр данного числа используя арифметические операторы."""
 a = 295
-b = a/10
-c = int (b % 10)
-d = int (b // 10)
-e = int ((b - int(b))* 10)
-x = str (e + d + c)
+c = int(a % 10)
+d = int(a // 10) % 10
+e = int(a // 100)
+x = str(e + d + c)
 
-print ('2 + 9 + 5 = ' + x)
-print ('response: '+ x)
+print('2 + 9 + 5 = ' + x)
+print('response: ' + x)

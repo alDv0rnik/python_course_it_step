@@ -5,6 +5,6 @@ import math
 
 R = 2.5
 s = math.pi * R ** 2
-S = str (round (s, 2))
+S = str(round(s, 2))
 
-print ('response: ' + S + ' cm.')
+print('response: ' + S + ' cm.')

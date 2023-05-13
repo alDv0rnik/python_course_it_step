@@ -8,5 +8,5 @@
 length = 250
 velocity = 80
 time = 250 / 80
-time1 = str (time)
-print ('time ' + time1 + ' h.')
+time1 = str(time)
+print('time ' + time1 + ' h.')
