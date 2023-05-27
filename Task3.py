@@ -17,5 +17,5 @@ elif "-" in str(num) and int(len(str(abs(num)))) >= 3:
 elif int(len(str(num))) >= 3:
     print("three or more digit number")
 else:
-    print("eror")
+    print("error")
 
