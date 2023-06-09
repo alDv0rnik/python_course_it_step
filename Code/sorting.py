@@ -36,7 +36,7 @@ else:
 count_ = 0
 for i in range(len(lst_) - 1):
     if to_find == lst_[i]:
-        print(f"ID = {i}")
+        print(f"ID = {i}", end = " ")
         break
     count_ += 1
 print(count_)
