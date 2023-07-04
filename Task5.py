@@ -6,5 +6,7 @@ def fakt(n):
     if n == 1:
         return 1
     return fakt(n - 1) * n
+
+
 n = int(input())
 print(fakt(n))
